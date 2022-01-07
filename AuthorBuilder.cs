@@ -21,7 +21,7 @@ namespace FluentBuilderDesingPattern
             return this;
         }
 
-        public AuthorBuilder WithlastName(string lastName)
+        public AuthorBuilder WithLastName(string lastName)
         {
             this._lastName = lastName;
             return this;

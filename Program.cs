@@ -9,18 +9,18 @@ namespace FluentBuilderDesingPattern
         {
             var author = new AuthorBuilder()
                              .WithFirstName("John Ronald Reuel")
-                             .WithlastName("Tolkien")
+                             .WithLastName("Tolkien")
                              .HavingBook(bookBuilder =>
                              {
                                  bookBuilder.WithName("The Lord of the Rings")
-                                            .WithNumberOfChapters(1178)
-                                            .WithNumberOfPages(55);
+                                            .WithNumberOfChapters(55)
+                                            .WithNumberOfPages(1178); 
                              })
                              .HavingBook(bookBuilder =>
                              {
                                  bookBuilder.WithName("The Hobbit")
-                                            .WithNumberOfChapters(310)
-                                            .WithNumberOfPages(19);
+                                            .WithNumberOfChapters(19)
+                                            .WithNumberOfPages(310);
                              })
                              .WithBirthYear(1892)
                              .Build();
